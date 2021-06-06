@@ -66,3 +66,13 @@ These methods provide meaning for the request you're making. They are used to pe
 
 
 ---
+
+### History of PATCH
+As per the semantics defined in the HTTP protocol, the GET, PUT, and POST methods need to use a full representation of the resource. The PUT method which can be used for resource creation or replacement is idempotent and can be used only for full updates. The edit forms used in conventional Ruby on Rails application need to create new resources by applying partial updates to a parent resource. Due to this requirement, the PATCH method was added to the HTTP protocol in 2010.[3][4]
+
+### PUT vs PATCH vs POST
+HTTP is the foundation of data communication for the World Wide Web. It is a request-response protocol which helps users communicate with the server to perform CRUD operations. HTTP supports a number of request methods such as PUT, POST and PATCH to create or update resources.[5]
+
+The main difference between the PUT and PATCH method is that the PUT method uses the request URI to supply a modified version of the requested resource which replaces the original version of the resource, whereas the PATCH method supplies a set of instructions to modify the resource. If the PATCH document is larger than the size of the new version of the resource sent by the PUT method then the PUT method is preferred.
+
+---
